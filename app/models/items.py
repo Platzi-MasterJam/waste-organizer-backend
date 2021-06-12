@@ -8,6 +8,7 @@ class TrashType(str, Enum):
     inorganic = "inorganic"
 
 class ItemBase(BaseModel):
+    id: int
     name: str
     type: TrashType
     image: HttpUrl

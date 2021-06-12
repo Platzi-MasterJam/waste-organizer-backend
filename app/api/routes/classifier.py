@@ -3,6 +3,12 @@ from db.items import Item
 
 from fastapi import APIRouter, HTTPException
 from loguru import logger
+from typing import List
+
+from fastapi import Depends, FastAPI, HTTPException
+# from fastapi.middleware.cors import CORSMiddleware 
+from starlette.responses import RedirectResponse
+
 
 
 router = APIRouter()
