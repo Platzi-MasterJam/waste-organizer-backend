@@ -1,12 +1,12 @@
 from pydantic import BaseModel
-from typing import Optional, 
+from typing import Optional 
 from enum import Enum
 
 class User(BaseModel):
     name: str
-    email: str
-    password: str
 
-class GameResult(BaseModel):
-    user: User
-    # date:
+class UserResult(BaseModel):
+    username: str
+    date: str
+    right_answers: int
+    bad_answers: int

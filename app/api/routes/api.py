@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from api.routes import products
+from api.routes import products, users
 
 router = APIRouter()
-# router.include_router(predictor.router, tags=["predictor"], prefix="/v1")
+router.include_router(users.router)
 router.include_router(products.router)

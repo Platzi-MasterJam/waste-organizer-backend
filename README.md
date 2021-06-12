@@ -10,8 +10,8 @@ Backend used in a game to classify trash for recycling.
 ## Installation
 ```
 cd app
-python -m venv .env
-source .env/bin/activate
+python -m venv venv
+source venv/bin/activate
 ```
 
 ## Run

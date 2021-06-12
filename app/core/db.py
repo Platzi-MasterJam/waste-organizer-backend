@@ -7,3 +7,4 @@ deta = Deta(config.DETA_KEY)
 db_users = deta.Base("users")
 db_results = deta.Base("results")
 db_products = deta.Base("products")
+

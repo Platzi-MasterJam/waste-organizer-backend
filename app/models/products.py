@@ -12,3 +12,7 @@ class ProductBase(BaseModel):
     name: str
     type: TrashType
     image: str
+
+class ProductGuessing(BaseModel):
+    key: str
+    answer: TrashType 
