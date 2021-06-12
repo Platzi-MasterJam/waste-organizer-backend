@@ -7,6 +7,8 @@ __pycache__/
 *.so
 
 venv/
+.deta
+
 # Distribution / packaging
 .Python
 build/
