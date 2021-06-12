@@ -7,8 +7,8 @@ class TrashType(str, Enum):
     organic = "organic"
     inorganic = "inorganic"
 
-class ItemBase(BaseModel):
-    id: int
+class ProductBase(BaseModel):
+    key: str
     name: str
     type: TrashType
-    image: HttpUrl
+    image: str

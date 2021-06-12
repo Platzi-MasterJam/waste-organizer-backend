@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+requests
+loguru
+joblib
+pytest
+black
+autopep8
+ipdb
+deta
