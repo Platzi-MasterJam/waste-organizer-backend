@@ -3,7 +3,7 @@ from models.user import UserResult
 from typing import List
 from db.products import Product
 from datetime import date
-from fastapi import APIRouter
+from fastapi import APIRouter, Response
 from typing import List
 from core import db
 
@@ -21,8 +21,10 @@ async def list_product():
 @router.post(
     "/products", name="create-products", response_model=Product
 )
-async def create_product(item: Product):
+async def create_product(item: Product, response: Response):
+    # TODO Change response status for 201
     instance = item.dict()
+    response.status_code = 201
     db.db_products.put(instance)
     return item
 
